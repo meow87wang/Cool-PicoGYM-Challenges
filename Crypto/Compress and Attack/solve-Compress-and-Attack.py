@@ -16,21 +16,20 @@ def resvLength(tn, text):
     x = int(tn.read_until(b"\n").decode())
     return x
 
-
-
 flag = "flag{bcde}"
 
 print("="*20 + "Test" + "="*20)
 
-print(len(compress(flag + "flag{x")))
-print(len(compress(flag + "flag{y")))
-print(len(compress(flag + "flag{b")))
+print(flag + "flag{x:", len(compress(flag + "flag{x")))
+print(flag + "flag{y:", len(compress(flag + "flag{y")))
+print(flag + "flag{b:", len(compress(flag + "flag{b")))
+print(flag + "flag{d:", len(compress(flag + "flag{d")))
 
 print()
 
-print(len(compress(flag + "flag{bx")))
-print(len(compress(flag + "flag{by")))
-print(len(compress(flag + "flag{bc")))
+print(flag + "flag{bx:", len(compress(flag + "flag{bx")))
+print(flag + "flag{by:", len(compress(flag + "flag{by")))
+print(flag + "flag{bc:", len(compress(flag + "flag{bc")))
 
 print("="*40)
 
@@ -51,6 +50,3 @@ for i in range(20):
     print(flag)
     
 tn.close()
-
-
-# Flag: picoCTF{sheriff_you_solved_the_crime}
