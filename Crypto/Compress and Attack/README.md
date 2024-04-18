@@ -1,4 +1,4 @@
-# Compress and Attack
+# Compress and Attack Writeup
 
 ## Abstract
 
